@@ -1,0 +1,31 @@
+{% extends 'appweb/base.html' %}
+{% load static %}
+
+<html>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% block page_title %}
+        {{title}}
+    {% endblock page_title %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/appweb/css/index.css">
+
+    {% block content %}
+    <div class="container text-center" style="min-height: 80vh; margin-top:210px">
+        <div class="card-body">
+            <h2>Detail Matkul {{matkul_detail.nama}}</h2>
+            <h5>Nama Dosen : {{matkul_detail.dosen}}</h5>
+            <h5>Banyak SKS : {{matkul_detail.sks}}</h5>
+            <h5>Semeseter : {{matkul_detail.semester}}</h5>
+            <h5>Tahun Ajaran : {{matkul_detail.tahun}}</h5>
+            <h5>Ruang Kelas : {{matkul_detail.ruang}}</h5>
+            <h5>Deskripsi Singkat : {{matkul_detail.deskripsi}}</h5>
+          </div>
+        
+    </div>
+       
+    {% endblock content %}

@@ -1,0 +1,52 @@
+{% extends 'appweb/base.html' %}
+{% load static %}
+
+{% block page_title %}
+    {{title}}
+{% endblock page_title %}
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'appweb/css/index.css' %}">
+
+{% block content %}
+    <div class="container" style="margin-top:120px; margin-bottom:30px; min-height:100vh;">
+        <form method="POST">
+            {% csrf_token %}
+                <div class="form-group">
+                  <label>Nama Mata Kuliah</label>
+                  {{matkul_form.nama}}
+                </div>
+      
+                <div class="form-group">
+                  <label for="dosen">Dosen Pengajar</label>
+                  {{matkul_form.dosen}}
+                </div>
+      
+                  <div class="form-group">
+                  <label for="sks">Jumlah SKS</label>
+                  {{matkul_form.sks}}
+                </div>
+      
+                <div class="form-group">
+                  <label for="semester">Semester</label>
+                  {{matkul_form.semester}}
+                </div>
+      
+                <div class="form-group">
+                  <label for="tahunAjar">Tahun Ajar</label>
+                  {{matkul_form.tahun}}
+                </div>
+      
+                <div class="form-group">
+                  <label for="ruang">Ruang</label>
+                  {{matkul_form.ruang}}
+                </div>
+      
+              <div class="form-group">
+                  <label for="deskripsi">Deskripsi</label>
+                  {{matkul_form.deskripsi}}
+              </div>
+              <button type="submit" class="btn btn-primary">Update Matkul</button>
+            </form>
+    </div>
+{% endblock content %}

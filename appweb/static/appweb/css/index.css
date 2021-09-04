@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Sansita+Swashed&display=swap');
+
+* {
+    margin: 0 px;
+    padding: 0 px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.navbar {
+    background-color: #724e85;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.home {
+    background-color: #fef0f5;
+    margin:auto;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:link, .navbar .navbar-nav .nav-item .nav-link:visited {
+    color:white;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:active {
+    color:black;
+    background-color: white;
+}
+
+.navbar .navbar-toggler {
+    color:black;
+    background-color: RGB(254, 240, 245);
+}
+
+.nav-item {
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.title {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.7);
+}
+
+h1 {
+    text-align: center; 
+    font-size:80px;
+    text-shadow: 0 0 1.0rem rgb(0, 0, 0);
+  }
+
+#contact-logo img {
+    transition: ease-out .1s;
+}
+    
+#contact-logo a:hover {
+    transform: translateY(-0.5em);
+}
+
+.col-md-6 .card, .col-md .card {
+    border: 1px solid RGB(254, 240, 245);
+}
+
+.col-md-6 .card .card-body , .col-md .card .card-body{
+    background:RGB(254, 240, 245);
+    
+}
+
+footer, .contact-logo {
+    text-align: center; 
+    background-color:#724e85;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5em .3em;
+}
+
+  .body {
+    margin-top:8px;
+    background-image: url('../img/14.jpg'); 
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Balsamiq Sans', cursive;
+  }
+
+@media (min-width: 1140px) {
+    .hori-timeline .events .event-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+    .hori-timeline .events .event-list .event-date {
+        top: -12px;
+    }
+}
+.bg-soft-primary {
+    background-color: rgba(64,144,203,.3)!important;
+}
+.bg-soft-success {
+    background-color: rgba(71,189,154,.3)!important;
+}
+.bg-soft-danger {
+    background-color: rgba(231,76,94,.3)!important;
+}
+.bg-soft-warning {
+    background-color: rgba(249,213,112,.3)!important;
+}
+.card {
+    border: none;
+    margin-bottom: 24px;
+    -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+}
