@@ -1,3 +1,6 @@
+Nama : Ardelia Yasmin Yolandaya
+NPM	 : 57419295
+
 ## Pengenalan
 
 _Django_ merupakan salah satu _framework_ yang menggunakan bahasa pemrograman _python_.
